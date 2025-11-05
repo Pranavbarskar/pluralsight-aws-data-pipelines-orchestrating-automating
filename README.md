@@ -143,4 +143,8 @@ Do not distribute or reuse without permission.
 [LinkedIn](https://www.linkedin.com/in/rupeshti) • [Pluralsight Author Page](https://app.pluralsight.com/author-home)
 
 ---
-# pluralsight-aws-data-pipelines-orchestrating-automating
+# Book Rupesh 
+
+💬 Book a free 15-minute consultation on AWS data pipeline design and orchestration: [bit.ly/bookwithrupesh](https://bit.ly/bookwithrupesh)
+💬 Book a 1:1 session with me to discuss AWS data pipeline design and orchestration best practices — [IGotAnOffer](https://bit.ly/book-rupesh) | [Personal](https://bit.ly/bookwithrupesh)
+
