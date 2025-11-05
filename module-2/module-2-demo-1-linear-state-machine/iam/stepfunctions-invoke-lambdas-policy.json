@@ -1,0 +1,16 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "InvokeDemoLambdas",
+      "Effect": "Allow",
+      "Action": [
+        "lambda:InvokeFunction"
+      ],
+      "Resource": [
+        "arn:aws:lambda:us-east-1:605024711850:function:ps-clean-orders-lambda",
+        "arn:aws:lambda:us-east-1:605024711850:function:ps-summarize-report-lambda"
+      ]
+    }
+  ]
+}

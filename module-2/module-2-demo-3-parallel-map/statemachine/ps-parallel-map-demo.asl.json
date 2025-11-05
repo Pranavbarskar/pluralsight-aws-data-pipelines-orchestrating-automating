@@ -1,0 +1,83 @@
+{
+  "Comment": "Parallel + Map with ItemSelector and S3 emit",
+  "StartAt": "GenerateDatasets",
+  "States": {
+    "GenerateDatasets": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:<REGION>:<ACCOUNT_ID>:function:ps-generate-datasets-lambda",
+      "ResultPath": "$",
+      "Next": "ParallelProcessing"
+    },
+    "ParallelProcessing": {
+      "Type": "Parallel",
+      "ResultPath": "$.parallel_out",
+      "Branches": [
+        {
+          "StartAt": "ForEachDataset",
+          "States": {
+            "ForEachDataset": {
+              "Type": "Map",
+              "ItemsPath": "$.datasets",
+              "ItemSelector": {
+                "dataset.$": "$$.Map.Item.Value"
+              },
+              "Iterator": {
+                "StartAt": "CleanOrders",
+                "States": {
+                  "CleanOrders": {
+                    "Type": "Task",
+                    "Resource": "arn:aws:lambda:<REGION>:<ACCOUNT_ID>:function:ps-clean-orders-lambda",
+                    "ResultPath": "$.clean",
+                    "Next": "SummarizeReport"
+                  },
+                  "SummarizeReport": {
+                    "Type": "Task",
+                    "Resource": "arn:aws:lambda:<REGION>:<ACCOUNT_ID>:function:ps-summarize-report-lambda",
+                    "Parameters": {
+                      "dataset.$": "$.clean.dataset"
+                    },
+                    "ResultPath": "$.summary",
+                    "End": true
+                  }
+                }
+              },
+              "ResultPath": "$.map_results",
+              "End": true
+            }
+          }
+        },
+        {
+          "StartAt": "AuditBranch",
+          "States": {
+            "AuditBranch": {
+              "Type": "Pass",
+              "Result": { "message": "audit done" },
+              "End": true
+            }
+          }
+        }
+      ],
+      "Next": "ReshapeForEmitter"
+    },
+    "ReshapeForEmitter": {
+      "Type": "Pass",
+      "Parameters": {
+        "results": {
+          "map": { "items.$": "$.parallel_out[0].map_results" },
+          "audit.$": "$.parallel_out[1]",
+          "execution": {
+            "arn.$": "$$.Execution.Id",
+            "startTime.$": "$$.Execution.StartTime"
+          }
+        }
+      },
+      "Next": "EmitExecutionSummary"
+    },
+    "EmitExecutionSummary": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:<REGION>:<ACCOUNT_ID>:function:ps-emit-execution-summary-lambda",
+      "ResultPath": "$.emit",
+      "End": true
+    }
+  }
+}

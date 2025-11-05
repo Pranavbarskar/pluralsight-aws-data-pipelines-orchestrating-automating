@@ -1,0 +1,29 @@
+{
+  "Comment": "Linear pipeline: Clean -> Summarize -> Notify",
+  "StartAt": "CleanOrders",
+  "States": {
+    "CleanOrders": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:605024711850:function:ps-clean-orders-lambda",
+      "ResultPath": "$.clean",
+      "Next": "SummarizeReport"
+    },
+    "SummarizeReport": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:605024711850:function:ps-summarize-report-lambda",
+      "Parameters": {
+        "clean.$": "$.clean",
+        "fail_summary.$": "$.fail_summary"
+      },
+      "ResultPath": "$.summary",
+      "Next": "NotifySuccess"
+    },
+    "NotifySuccess": {
+      "Type": "Pass",
+      "Result": {
+        "message": "Pipeline completed successfully"
+      },
+      "End": true
+    }
+  }
+}
