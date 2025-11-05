@@ -145,6 +145,6 @@ Do not distribute or reuse without permission.
 ---
 # Book Rupesh 
 
-💬 Book a free 15-minute consultation on AWS data pipeline design and orchestration: [bit.ly/bookwithrupesh](https://bit.ly/bookwithrupesh)
-💬 Book a 1:1 session with me to discuss AWS data pipeline design and orchestration best practices — [IGotAnOffer](https://bit.ly/book-rupesh) | [Personal](https://bit.ly/bookwithrupesh)
+💬 Book a free 15-minute consultation for interview preparation or career questions: [bit.ly/bookwithrupesh](https://bit.ly/bookwithrupesh)
+💬 Book a 1:1 session with me to discuss interview preparation or career questions — [IGotAnOffer](https://bit.ly/book-rupesh) | [Personal](https://bit.ly/bookwithrupesh)
 
